@@ -1,0 +1,137 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0984e3;
+}
+
+/* Blog post card */
+.post {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.post h2 {
+  margin-top: 0;
+  color: #2d3436;
+  font-size: 1.4rem;
+}
+
+.post p {
+  font-size: 1rem;
+  color: #636e72;
+  margin-top: 0.5rem;
+}
+
+/* Action buttons */
+.actions {
+  margin-top: 1rem;
+}
+
+.actions .btn-action {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Edit button */
+.btn-edit {
+  background-color: #00b894;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #00cec9;
+  transform: translateY(-1px);
+}
+
+/* Delete button */
+.btn-delete {
+  background-color: #d63031;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #e17055;
+  transform: translateY(-1px);
+}
+
+/* Global buttons */
+.btn {
+  background-color: #0984e3;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #74b9ff;
+  transform: scale(1.02);
+}
+
+/* Form styling */
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.blog-form label {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.blog-form input,
+.blog-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.blog-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>My Blog</title>
+</head>
+<body>
+  <div class="container">
+    <h1>My Blog</h1>
+    <a class="btn" href="/compose">+ Compose New Post</a>
+
+    <% posts.forEach(function(post, index) { %>
+      <div class="post">
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+        <div class="actions">
+          <a class="btn-action btn-edit" href="/edit/<%= index %>">✏️ Edit</a>
+          <a class="btn-action btn-delete" href="/delete/<%= index %>">🗑️ Delete</a>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>

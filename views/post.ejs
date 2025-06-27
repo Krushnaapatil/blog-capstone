@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title><%= typeof index !== 'undefined' ? 'Edit Post' : 'Compose New Post' %></title>
+</head>
+<body>
+  <div class="container">
+    <h1><%= typeof index !== 'undefined' ? 'Edit Post' : 'Compose New Post' %></h1>
+
+    <form class="blog-form" action="/<%= typeof index !== 'undefined' ? 'edit/' + index : 'compose' %>" method="post">
+      <label for="postTitle">Title</label>
+      <input id="postTitle" name="postTitle" type="text" value="<%= postTitle || '' %>" placeholder="Enter title..." required />
+
+      <label for="postBody">Details</label>
+      <textarea id="postBody" name="postBody" placeholder="Write your blog here..." required><%= postBody || '' %></textarea>
+
+      <button class="btn" type="submit"><%= typeof index !== 'undefined' ? 'Update' : 'Publish' %></button>
+    </form>
+  </div>
+</body>
+</html>
