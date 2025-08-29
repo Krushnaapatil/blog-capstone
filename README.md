@@ -1,34 +1,51 @@
-📝 Blog Post Web App (Capstone Project)
+📚 Author Info Website
 
-A clean and responsive blog platform built with Node.js, Express.js, and EJS. This is a Capstone Project with CRUD functionality — create, read, update, and delete blog posts. Styling is handled with custom CSS for a polished UI.
-
-
-🔧 Technologies Used
-
- Node.js
- Express.js
- EJS (Embedded JavaScript Templates)
- Body-Parser
- Vanilla CSS
-
+A simple and interactive web application that fetches and displays information about authors using the OpenLibrary Authors API.
 
 🚀 Features
 
-📝 Create new blog posts
-👀 View all blog entries on the homepage
-✏️ Edit any existing post
-🗑️ Delete unwanted posts
-🎨 Fully styled and responsive UI
+🔍 Search for authors by name
 
+📖 View detailed information such as:
 
-🛠️ How to Run Locally
+Name
 
-1. Clone the repository:
-```
-bash
-git clone https://github.com/your-username/blog-capstone.git
+Birth / Death dates
+
+Biography
+
+Works authored
+
+🎨 Clean and responsive UI for smooth user experience
+
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript (Vanilla JS / React if you used it)
+
+API: OpenLibrary Authors API
+
+Tools: Git, GitHub
+
+📂 Project Structure
+author-info-website/
+│── index.html       # Main HTML file
+│── style.css        # Styling
+│── script.js        # API calls & DOM updates
+│── README.md        # Documentation
+
+⚡ How to Run Locally
+
+Clone the repository
+
+git clone https://github.com/krushnaapatil/blog-capstone.git
 cd blog-capstone
-npm install
-node app.js
-http://localhost:3000
-```
+
+Open index.html in your browser
+
+Start searching for your favorite authors 📖✨
+
+Contributions are welcome! Feel free to fork the repo, create a branch, and submit a PR.
+
+📜 License
+
+This project is licensed under the MIT License.
